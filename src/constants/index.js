@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/Project-4.png"
+import project4 from "../assets/projects/project-4.png"
 
 export const HERO_CONTENT = `Hi, I’m a Python Data Analyst specializing in transforming raw data into actionable insights. With expertise in Pandas, NumPy, and Seaborn, I streamline data cleaning, processing, and visualization to reveal hidden trends and drive smarter decisions. I excel in automating workflows, ensuring efficient and scalable solutions. My proficiency in SQL and MySQL allows me to manage and refine databases effectively, turning complex information into clear, data-driven strategies. Let me help you uncover valuable insights and enhance your decision-making with powerful data analysis.`;
 
