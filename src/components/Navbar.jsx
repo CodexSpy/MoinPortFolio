@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '../assets/CodeSpyLOGO.webp';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import { MdOutlineDarkMode } from 'react-icons/md';  // Dark mode icon
-import { CiLight } from 'react-icons/ci';  // Light mode icon
+import { MdOutlineDarkMode } from 'react-icons/md';  
+import { CiLight } from 'react-icons/ci';
 import { motion } from 'framer-motion';
 
 const iconHoverEffect = {
@@ -50,13 +50,19 @@ const Navbar = ({ onThemeToggle, isDarkTheme }) => {
           <SiLeetcode />
         </motion.a>
 
-        <button onClick={onThemeToggle} className='p-2 '>
+         <motion.button
+          onClick={onThemeToggle}
+          className="p-2 rounded-full transition-transform duration-300"
+          whileHover={{ scale: 1.2 }}
+          animate={{ rotate: isDarkTheme ? 180 : 0, scaleX: isDarkTheme ? 1 : -1 }} 
+          transition={{ duration: 0.1 , ease: 'easeInOut' }}
+        >
           {isDarkTheme ? (
             <CiLight className='text-2xl text-gray-200' />
           ) : (
-            <MdOutlineDarkMode className='text-2xl text-gray-800' /> 
+            <MdOutlineDarkMode className='text-2xl text-gray-800' />
           )}
-        </button>
+        </motion.button>
       </div>
     </nav>
   );
