@@ -27,7 +27,7 @@ const Navbar = ({ onThemeToggle, isDarkTheme }) => {
           href="https://linkedin.com/in/moin-khan-0335b4245"
           whileHover="hover"
           variants={iconHoverEffect}
-          className='text-blue-500'
+          className={`${isDarkTheme ? 'text-blue-400' : 'text-blue-600'}`}
         >
           <FaLinkedin />
         </motion.a>
@@ -36,7 +36,7 @@ const Navbar = ({ onThemeToggle, isDarkTheme }) => {
           href="https://github.com/CodexSpy"
           whileHover="hover"
           variants={iconHoverEffect}
-          className='text-slate-200'
+          className={`${isDarkTheme ? 'text-slate-200' : 'text-slate-800'}`}
         >
           <FaGithub />
         </motion.a>
@@ -45,7 +45,7 @@ const Navbar = ({ onThemeToggle, isDarkTheme }) => {
           href="https://leetcode.com/u/kmoin9985/"
           whileHover="hover"
           variants={iconHoverEffect}
-          className='text-orange-300'
+          className={`${isDarkTheme ? 'text-orange-300' : 'text-orange-400'}`}
         >
           <SiLeetcode />
         </motion.a>
